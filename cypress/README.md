@@ -1,3 +1,4 @@
+# DOKUMENTASI FINAL PROJECT
 # Automation Testing OrangeHRM dengan Cypress: Login, Directory, dan Recruitment (POM + Intercept)
 
 - Nama : Difa Aqilah
@@ -30,7 +31,7 @@ Login       : Pintu masuk aplikasi, memeriksa username dan password
 Directory   : Mencari karyawan berdasarkan nama, job title, dan lokasi 
 Recruitment : Melihat kandidat dan lowongan, serta menambah kandidat baru
 
-# Ada 24 test case dengan masing-masing fitur 8 test case
+Ada 24 test case dengan masing-masing fitur 8 test case
 # Login (login.cy.js)
 Login dengan username dan password valid        (positive)
 Login dengan password tidak valid               (negative)
@@ -61,8 +62,7 @@ Tambah kandidat dengan data wajib kosong        (negative)
 Tambah kandidat dengan format email tidak valid (negative)
 Tambah kandidat dengan data valid               (positive)
 
-## 2. Yang Digunakan dan Fungsinya
-## 2.1 Tools
+## Tools
 
 Cypress            : Framework untuk menjalankan automation test pada web dan API 
 Node.js dan npm    : Menjalankan Cypress dan memasang package 
@@ -72,7 +72,7 @@ Git                : Menyimpan riwayat perubahan kode
 GitHub             : Menyimpan project secara online dan membagikannya lewat link 
 Microsoft Excel    : Menyusun dokumen manual testing 
 
-## 2.2 Struktur folder dan file lengkap
+## Struktur folder dan file lengkap
 
 Cypress/                           (folder utama project)
 ├── cypress/
@@ -105,7 +105,6 @@ Cypress/                           (folder utama project)
 ├── package-lock.json
 └── README.md
 
-
 Isi tiap file `pages/` ada empat bagian:
 
 Locator     : Alamat elemen di halaman (kolom input, tombol, pesan) 
@@ -113,7 +112,7 @@ Intercept   : Memasang pemantau pada request jaringan
 Action      : Aksi pengguna (ketik, klik, pilih dropdown, buka menu) 
 Assertion   : Pengecekan hasil (tampilan, teks, URL, status, dan isi response)
 
-## 2.3 Teknik yang digunakan
+## Teknik yang digunakan
 
 1. Page Object Model (POM)    : Memisahkan data, halaman, dan test. Jika selector atau data berubah, cukup diperbaiki di satu tempat, dan test menjadi pendek serta mudah dibaca 
 2. Intercept (`cy.intercept`) : Memantau request antara halaman dan server, untuk memastikan aksi di layar benar-benar berdampak ke server 
@@ -122,7 +121,7 @@ Assertion   : Pengecekan hasil (tampilan, teks, URL, status, dan isi response)
 5. API testing (`cy.request`) : Menguji API langsung tanpa membuka halaman web 
 6. Manual testing             : Menjalankan test secara manual dan mencatat hasilnya, serta melaporkan bug 
 
-## 2.5 Perintah Cypress yang dipakai
+## Perintah Cypress yang dipakai
 
 `describe`                 : Mengelompokkan test dalam satu fitur 
 `it`                       : Satu test case 
@@ -137,7 +136,7 @@ Assertion   : Pengecekan hasil (tampilan, teks, URL, status, dan isi response)
 `cy.request()`             : Mengirim request langsung ke API 
 
 
-## 3. Project Akhir
+## Project Akhir
 
 Project akhir menguji tiga fitur OrangeHRM, masing-masing 8 test case
 (total 24 test case) :
@@ -146,7 +145,7 @@ Project akhir menguji tiga fitur OrangeHRM, masing-masing 8 test case
 2. Automation testing : Cypress dengan format POM yang mencakup
    *action*, *assertion*, *data*, dan *intercept*.
 
-## 5. Cara Menjalankan
+## Cara Menjalankan
 
 1. Install dependensi
 npm install
@@ -166,7 +165,7 @@ Catatan:
 - Test API ReqRes memerlukan API key pribadi (ambil dari reqres.in). 
 
 
-## 6. Hasil
+## Hasil
 
 `login.cy.js`       : 8 passing 
 `directory.cy.js`   : 8 passing 
